@@ -7,7 +7,7 @@
 }
 
 .ce-chat-list {
-  background-color: rgb(240, 240, 240) !important;
+  background-color: rgb(240, 240, 240);
 }
 
 .ce-chats-container {
@@ -18,33 +18,33 @@
 .ce-active-chat-card {
   background-color: cornflowerblue;
   color: white;
-  border: 4px solid black !important;
-  border-radius: 0px !important;
+  border: 4px solid black;
+  border-radius: 0px;
 }
 
 .ce-chat-subtitle-text {
-  color: #595959 !important;
+  color: #595959;
 }
 
 .ce-chat-form-container {
-  padding-bottom: 20px !important;
+  padding-bottom: 20px;
 }
 
 .ce-text-input {
-  border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border-radius: 6px;
+  border: 1px solid #3b2a50;
 }
 
 .ce-primary-button {
-  border-radius: 6px !important;
-  background-color: rgb(132, 132, 235) !important;
+  border-radius: 6px;
+  background-color: rgb(132, 132, 235);
   position: relative;
   bottom: 1px;
 }
 
 .ce-danger-button {
-  background-color: white !important;
-  border-radius: 22px !important;
+  background-color: white;
+  border-radius: 22px;
 }
 
 .ce-settings {
@@ -53,22 +53,22 @@
 }
 
 .ce-autocomplete-input {
-  border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
+  border-radius: 6px;
+  border: 1px solid #3b2a50;
 }
 
 .ce-autocomplete-options {
-  border-radius: 6px !important;
-  border: 1px solid #3b2a50 !important;
-  background-color: white !important;
+  border-radius: 6px;
+  border: 1px solid #3b2a50;
+  background-color: white;
 }
 
 .ce-chat-settings-container {
-  padding-top: 12px !important;
+  padding-top: 12px;
 }
 
 .ce-chat-avatars-row {
-  display: none !important;
+  display: none;
 }
 
 /* CUSTOM FEED */
@@ -136,7 +136,6 @@
   object-fit: cover;
   border-radius: 6px;
   height: 30vw;
-  /* width: 30vw; */
   max-height: 200px;
   max-width: 200px;
   min-height: 100px;
@@ -207,6 +206,21 @@
   position: relative;
   font-size: 14px;
 }
+ .logout button{
+    margin:10px 10px;
+    border : none;
+    outline : none;
+    background-color: rgb(199, 41, 41);
+    padding:5px 5px;
+    color:white;
+    cursor:pointer;
+    font-size: 16px;
+    border-radius:4px;
+    opacity: 0.8;
+  }
+  .logout button:hover{
+    background-color: red;
+  }
 
 /* FORM STYLES */
 *,
@@ -220,8 +234,7 @@
 
 .wrapper {
   height:100vh;
-  background-size: cover;
-  background-image: url("https://camo.githubusercontent.com/979fa3d9ec618786188d3502fe2fa85bd33a905743462616a46012321a1fd4c5/68747470733a2f2f706e672e706e67747265652e636f6d2f7468756d625f6261636b2f66683236302f6261636b67726f756e642f32303230313031392f706e67747265652d6461726b2d626c75652d746563686e6f6c6f67792d6261636b67726f756e642d776974682d6469676974616c2d6e6574776f726b2d6c696e65732d616e642d696c6c757374726174696f6e2d6f662d696d6167655f3432333432302e6a7067");
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +246,7 @@
 	margin: 0 auto;
   padding: 1.5rem 2rem;
   border-radius: 25px;
-  background-color: rgb(255, 255, 255);
+  background-color:lightblue;
   border: none;
   width: 90%;
   display: block;
@@ -245,24 +258,6 @@
 
 .form {
   width: 400px;
-}
-
-.title {
-  text-align: center;
-  color: black;
-  background-color: white;
-  border-radius: 25px;
-  margin-left: 63px;
-  margin-bottom: 70px;
-  width: 70%;
-  font-size: 2em;
-  font-family: "Lucida Handwriting",  bold;
-}
-
-.iconimage
-{
-  height:50px;
-  margin-left: 160px;
 }
 
 .button {
@@ -285,7 +280,7 @@
 }
 
 .button:hover {
-  background-color: #050127; 
+  background-color:black; 
   color: white;
 }
 .button span {
@@ -309,26 +304,26 @@
   opacity: 1;
   right: 0;
 }
-
-.sc{
-  font-family: "monaco",  monospace;
+.logo{
+  height: 250px;
+  width: 400px;
 }
-
-.logout{
-margin-left: 80%;
+.about{
+  height:100vh;
+  background-color: lightskyblue;
+ background-size: cover;
+  text-align: center; 
 }
-.logout button{
-  margin:20px 10px;
-  border : none;
-  outline : none;
-  background-color: rgb(199, 41, 41);
-  padding:5px 10px;
-  color:white;
-  cursor:pointer;
-  font-size: 16px;
-  border-radius:4px;
-  opacity: 0.8;
+.contact{
+  height:100vh;
+  background-color: lightblue;
+  text-align: center;
 }
-.logout button:hover{
-  background-color: red;
+.navicon{
+  height: 50px;
+  width: 50px;
+}
+.navbar-brand{
+  padding-left: 10px;
+  font-style:bold;
 }

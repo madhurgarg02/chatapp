@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
+import Logo from "../Images/Logo.jpg";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const projectID = '7bb9ba34-05d3-4577-9164-b8fe79d687a5';
 
@@ -27,9 +30,10 @@ const Modal = () => {
   };
 
   return (
+    <div>
     <div className="wrapper">
       <div className="form">
-        <h1 className="title">Chat Application!</h1>
+        <img className="logo" alt="Logo" src={Logo} />
         <form onSubmit={handleSubmit}>
           <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} className="input" placeholder="Username" required />
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} className="input" placeholder="Password" required />
@@ -41,6 +45,7 @@ const Modal = () => {
         </form>
         <h1>{error}</h1>
       </div>
+    </div>
     </div>
   );
 };

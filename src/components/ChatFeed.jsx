@@ -42,14 +42,9 @@ const ChatFeed = (props) => {
   };
 
   if (!chat) return <div />;
-  const logout = () => {
-    localStorage.clear();
-
-    window.location.reload();
-  };
+ 
   return (
     <div className="chat-feed">
-      <div className="logout"><button type="button" onClick={logout}>Logout</button></div>
       <div className="chat-title-container">
         <div className="chat-title">{chat?.title}</div>
         <div className="chat-subtitle">
@@ -66,4 +61,3 @@ const ChatFeed = (props) => {
 };
 
 export default ChatFeed;
-
